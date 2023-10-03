@@ -72,6 +72,20 @@ struct DragGestureView: View {
                                 .font(.headline)
                                 .fontWeight(.bold)
                         }
+                        NavigationLink{
+                            HapticsView()
+                        } label: {
+                            Text("Haptic Feedback")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        NavigationLink{
+                            LocalNotificationsView()
+                        } label: {
+                            Text("Notifications")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
                     }
                 }
                 .offset(offset)
