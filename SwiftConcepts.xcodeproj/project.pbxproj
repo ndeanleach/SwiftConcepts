@@ -13,8 +13,12 @@
 		666C96A92AC8A42300600040 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96A82AC8A42300600040 /* ContentView.swift */; };
 		666C96AB2AC8A42400600040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666C96AA2AC8A42400600040 /* Assets.xcassets */; };
 		666C96AE2AC8A42400600040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666C96AD2AC8A42400600040 /* Preview Assets.xcassets */; };
-		666C96B52AC8AB5400600040 /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96B42AC8AB5400600040 /* SwipeCard.swift */; };
+		666C96B52AC8AB5400600040 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96B42AC8AB5400600040 /* DragGestureView.swift */; };
 		666C96B92AC8E40D00600040 /* ScrollReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96B82AC8E40D00600040 /* ScrollReader.swift */; };
+		66CFB3572ACC63F300610442 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFB3562ACC63F300610442 /* StarRatingView.swift */; };
+		66CFB3592ACC702900610442 /* SoundFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFB3582ACC702900610442 /* SoundFX.swift */; };
+		66CFB35C2ACC746300610442 /* Tada-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66CFB35B2ACC746300610442 /* Tada-sound.mp3 */; };
+		66CFB35E2ACC746900610442 /* Ding-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66CFB35D2ACC746900610442 /* Ding-sound-effect.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +29,12 @@
 		666C96A82AC8A42300600040 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		666C96AA2AC8A42400600040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		666C96AD2AC8A42400600040 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		666C96B42AC8AB5400600040 /* SwipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		666C96B42AC8AB5400600040 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		666C96B82AC8E40D00600040 /* ScrollReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollReader.swift; sourceTree = "<group>"; };
+		66CFB3562ACC63F300610442 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		66CFB3582ACC702900610442 /* SoundFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFX.swift; sourceTree = "<group>"; };
+		66CFB35B2ACC746300610442 /* Tada-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tada-sound.mp3"; sourceTree = "<group>"; };
+		66CFB35D2ACC746900610442 /* Ding-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ding-sound-effect.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +68,15 @@
 			isa = PBXGroup;
 			children = (
 				666C96A82AC8A42300600040 /* ContentView.swift */,
+				66CFB3582ACC702900610442 /* SoundFX.swift */,
+				66CFB3562ACC63F300610442 /* StarRatingView.swift */,
 				663803052ACB5A6D002C8EA9 /* MultiSheets.swift */,
 				663803032ACB08E6002C8EA9 /* GeoReader.swift */,
 				666C96B82AC8E40D00600040 /* ScrollReader.swift */,
+				666C96B42AC8AB5400600040 /* DragGestureView.swift */,
 				666C96A62AC8A42300600040 /* SwiftConceptsApp.swift */,
-				666C96B42AC8AB5400600040 /* SwipeCard.swift */,
 				666C96AA2AC8A42400600040 /* Assets.xcassets */,
+				66CFB35A2ACC744D00610442 /* Sounds */,
 				666C96AC2AC8A42400600040 /* Preview Content */,
 			);
 			path = SwiftConcepts;
@@ -77,6 +88,15 @@
 				666C96AD2AC8A42400600040 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66CFB35A2ACC744D00610442 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				66CFB35D2ACC746900610442 /* Ding-sound-effect.mp3 */,
+				66CFB35B2ACC746300610442 /* Tada-sound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				666C96AE2AC8A42400600040 /* Preview Assets.xcassets in Resources */,
+				66CFB35E2ACC746900610442 /* Ding-sound-effect.mp3 in Resources */,
+				66CFB35C2ACC746300610442 /* Tada-sound.mp3 in Resources */,
 				666C96AB2AC8A42400600040 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,12 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CFB3572ACC63F300610442 /* StarRatingView.swift in Sources */,
 				663803042ACB08E7002C8EA9 /* GeoReader.swift in Sources */,
 				666C96A92AC8A42300600040 /* ContentView.swift in Sources */,
-				666C96B52AC8AB5400600040 /* SwipeCard.swift in Sources */,
+				666C96B52AC8AB5400600040 /* DragGestureView.swift in Sources */,
 				663803062ACB5A6D002C8EA9 /* MultiSheets.swift in Sources */,
 				666C96B92AC8E40D00600040 /* ScrollReader.swift in Sources */,
 				666C96A72AC8A42300600040 /* SwiftConceptsApp.swift in Sources */,
+				66CFB3592ACC702900610442 /* SoundFX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,21 +29,56 @@ struct DragGestureView: View {
     }
 
     var body: some View {
-        ZStack{
-            
-            VStack{
-                Text("\(offset.width)")
-                Spacer()
-            }
-            
-            RoundedRectangle(cornerRadius: 20)
-                .fill(self.isDragging ? Color.gray : Color.black)
-                .opacity(self.isDragging ? 0.5 : 1.0)
-                .frame(width: 300, height: 500, alignment: .center)
+        NavigationStack{
+            ZStack{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(self.isDragging ? Color.orange : Color.red)
+                        .opacity(self.isDragging ? 0.5 : 1.0)
+                        .frame(width: 300, height: 500, alignment: .center)
+                    VStack(spacing: 20){
+                        NavigationLink{
+                            ScrollReader()
+                        } label: {
+                            Text("Scroll Search")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        NavigationLink{
+                            GeoReader()
+                        } label: {
+                            Text("Panning animation")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        NavigationLink{
+                            MultiSheets()
+                        } label: {
+                            Text("Multiple Sheet method")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        NavigationLink{
+                            StarRatingView()
+                        } label: {
+                            Text("Animated Star Rating")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        NavigationLink{
+                            SoundFX()
+                        } label: {
+                            Text("Sound FX Buttons")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                    }
+                }
                 .offset(offset)
                 .scaleEffect(getScaleAmount())
                 .rotationEffect(Angle(degrees: getRotationAmount()))
                 .gesture(drag)
+            }
         }
     }
     func getScaleAmount() -> CGFloat {

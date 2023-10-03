@@ -8,14 +8,19 @@
 import SwiftUI
 import AVKit
 
-
 class SoundManager {
     static let instance = SoundManager() //Singleton
     
     var player: AVAudioPlayer?
     
-    func playSound() {
-        guard let url = URL(string: "") else { return }
+    enum SoundOption: String {
+        case tada = "Tada-sound"
+        case ding = "Ding-sound-effect"
+    }
+    
+    func playSound(_ sound: SoundOption) {
+        
+        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -28,11 +33,13 @@ class SoundManager {
 
 struct SoundFX: View {
     var body: some View {
-        Button("Sound 1"){
-            
-        }
-        Button("Sound 2"){
-            
+        VStack(spacing: 40){
+            Button("Sound 1"){
+                SoundManager.instance.playSound(.ding)
+            }
+            Button("Sound 2"){
+                SoundManager.instance.playSound(.tada)
+            }
         }
     }
 }
