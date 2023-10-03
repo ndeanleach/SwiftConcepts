@@ -14,7 +14,6 @@ struct ScrollReader: View {
     
     var body: some View {
         VStack {
-            
             TextField("Skip to: ", text: $search)
                 .frame(height: 55)
                 .shadow(radius: 10)

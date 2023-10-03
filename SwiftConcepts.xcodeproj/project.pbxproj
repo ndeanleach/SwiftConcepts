@@ -19,6 +19,7 @@
 		66CFB3592ACC702900610442 /* SoundFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFB3582ACC702900610442 /* SoundFX.swift */; };
 		66CFB35C2ACC746300610442 /* Tada-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66CFB35B2ACC746300610442 /* Tada-sound.mp3 */; };
 		66CFB35E2ACC746900610442 /* Ding-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66CFB35D2ACC746900610442 /* Ding-sound-effect.mp3 */; };
+		66CFB3602ACC860400610442 /* HapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFB35F2ACC860400610442 /* HapticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		66CFB3582ACC702900610442 /* SoundFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFX.swift; sourceTree = "<group>"; };
 		66CFB35B2ACC746300610442 /* Tada-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tada-sound.mp3"; sourceTree = "<group>"; };
 		66CFB35D2ACC746900610442 /* Ding-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ding-sound-effect.mp3"; sourceTree = "<group>"; };
+		66CFB35F2ACC860400610442 /* HapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				666C96A82AC8A42300600040 /* ContentView.swift */,
+				66CFB35F2ACC860400610442 /* HapticsView.swift */,
 				66CFB3582ACC702900610442 /* SoundFX.swift */,
 				66CFB3562ACC63F300610442 /* StarRatingView.swift */,
 				663803052ACB5A6D002C8EA9 /* MultiSheets.swift */,
@@ -173,6 +176,7 @@
 			files = (
 				66CFB3572ACC63F300610442 /* StarRatingView.swift in Sources */,
 				663803042ACB08E7002C8EA9 /* GeoReader.swift in Sources */,
+				66CFB3602ACC860400610442 /* HapticsView.swift in Sources */,
 				666C96A92AC8A42300600040 /* ContentView.swift in Sources */,
 				666C96B52AC8AB5400600040 /* DragGestureView.swift in Sources */,
 				663803062ACB5A6D002C8EA9 /* MultiSheets.swift in Sources */,
