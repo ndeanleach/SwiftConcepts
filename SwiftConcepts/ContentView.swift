@@ -14,7 +14,17 @@ struct ContentView: View {
             NavigationLink{
                 ScrollReader()
             } label: {
-                Text("ScrollViewReader")
+                Text("Scroll Search")
+            }
+            NavigationLink{
+                GeoReader()
+            } label: {
+                Text("Panning animation")
+            }
+            NavigationLink{
+                MultiSheets()
+            } label: {
+                Text("Multiple Sheet method")
             }
         }
     }

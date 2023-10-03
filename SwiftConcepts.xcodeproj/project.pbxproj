@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663803042ACB08E7002C8EA9 /* GeoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663803032ACB08E6002C8EA9 /* GeoReader.swift */; };
+		663803062ACB5A6D002C8EA9 /* MultiSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663803052ACB5A6D002C8EA9 /* MultiSheets.swift */; };
 		666C96A72AC8A42300600040 /* SwiftConceptsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96A62AC8A42300600040 /* SwiftConceptsApp.swift */; };
 		666C96A92AC8A42300600040 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C96A82AC8A42300600040 /* ContentView.swift */; };
 		666C96AB2AC8A42400600040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666C96AA2AC8A42400600040 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		663803032ACB08E6002C8EA9 /* GeoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoReader.swift; sourceTree = "<group>"; };
+		663803052ACB5A6D002C8EA9 /* MultiSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSheets.swift; sourceTree = "<group>"; };
 		666C96A32AC8A42300600040 /* SwiftConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		666C96A62AC8A42300600040 /* SwiftConceptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConceptsApp.swift; sourceTree = "<group>"; };
 		666C96A82AC8A42300600040 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				666C96A82AC8A42300600040 /* ContentView.swift */,
+				663803052ACB5A6D002C8EA9 /* MultiSheets.swift */,
+				663803032ACB08E6002C8EA9 /* GeoReader.swift */,
 				666C96B82AC8E40D00600040 /* ScrollReader.swift */,
 				666C96A62AC8A42300600040 /* SwiftConceptsApp.swift */,
 				666C96B42AC8AB5400600040 /* SwipeCard.swift */,
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663803042ACB08E7002C8EA9 /* GeoReader.swift in Sources */,
 				666C96A92AC8A42300600040 /* ContentView.swift in Sources */,
 				666C96B52AC8AB5400600040 /* SwipeCard.swift in Sources */,
+				663803062ACB5A6D002C8EA9 /* MultiSheets.swift in Sources */,
 				666C96B92AC8E40D00600040 /* ScrollReader.swift in Sources */,
 				666C96A72AC8A42300600040 /* SwiftConceptsApp.swift in Sources */,
 			);
